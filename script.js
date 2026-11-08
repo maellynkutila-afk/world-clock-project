@@ -17,6 +17,9 @@ setInterval(displayCityInfo, 1000);
 function changeDisplay(event) {
   function intervalChange() {
     let timeZone = event.target.value;
+    if (timeZone === "current-location") {
+      timeZone = moment.tz.guess();
+    }
     let cityName = timeZone.replace("_", " ").split("/")[1];
     let time = moment().tz(timeZone);
     let citiesElement = document.querySelector("#by-default");
@@ -24,7 +27,12 @@ function changeDisplay(event) {
           <h2>${cityName}</h2>
           <div class="date">${time.format("dddd, MMMM D, YYYY")}</div>
           <div class="time">${time.format("HH:mm:ss")}</div>
-        </div>`;
+        </div>
+        <div>
+        <a href="https://world-clocks-shecodes.netlify.app/" class="back">Back</a>
+        </div>
+        
+        `;
   }
   intervalChange();
   setInterval(intervalChange, 1000);

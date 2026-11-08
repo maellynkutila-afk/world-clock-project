@@ -21,6 +21,16 @@ h2 {
   margin-top: 30px;
   margin-bottom: 0;
 }
+a {
+  color: black;
+}
+a.back {
+  display: block;
+  margin: 130px auto;
+  color: #cb49c5;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 22px;
+}
 footer {
   font-size: 20px;
   text-align: center;
