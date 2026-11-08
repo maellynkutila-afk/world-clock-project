@@ -18,12 +18,6 @@ select {
 h2 {
   font-size: 35px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-h2.rio {
-  margin-top: 30px;
-  margin-bottom: 0;
-}
-h2.beijing {
   margin-top: 30px;
   margin-bottom: 0;
 }

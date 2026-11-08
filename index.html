@@ -11,23 +11,27 @@
   <body>
     <div class="container">
       <h1>World Clocks</h1>
-      <select>
+      <select id="list-of-cities">
         <option value="">-- Select a city --</option>
         <option value="current-location">My current location</option>
-        <option value="paris">Paris 🇫🇷</option>
-        <option value="new-york">New York 🇺🇸</option>
-        <option value="kinshasa">Kinshasa 🇨🇩</option>
+        <option value="Europe/Paris">Paris</option>
+        <option value="America/New_York">New York</option>
+        <option value="Africa/Kinshasa">Kinshasa</option>
+        <option value="Asia/Seoul">Seoul</option>
+        <option value="Pacific/Auckland">Auckland</option>
       </select>
-      <div class="city" id="rio-brazil">
-        <h2 class="rio">Rio de Janeiro 🇧🇷</h2>
-        <div class="date">Tuesday November 3, 2026</div>
-        <div class="time">19:27:30</div>
-      </div>
+      <div id="by-default">
+        <div class="city" id="rio-brazil">
+          <h2 class="rio">Rio de Janeiro</h2>
+          <div class="date">Tuesday November 3, 2026</div>
+          <div class="time">19:27:30</div>
+        </div>
 
-      <div class="city" id="beijing-china">
-        <h2 class="beijing">Beijing 🇨🇳</h2>
-        <div class="date">Tuesday November 3, 2026</div>
-        <div class="time">19:27:30</div>
+        <div class="city" id="beijing-china">
+          <h2 class="beijing">Beijing</h2>
+          <div class="date">Tuesday November 3, 2026</div>
+          <div class="time">19:27:30</div>
+        </div>
       </div>
     </div>
     <footer>
